@@ -1,0 +1,141 @@
+/*HEADER STYLES*/
+body {
+    font-family: 'Gulzar', serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    background: #F6F8FF;
+}
+
+header {
+    margin: 0;
+    background: #212529;
+    width: 100%;
+    min-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 3em;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: border-box;
+}
+
+header nav a {
+    margin: 0 1em 0  0;
+    text-decoration: none;
+    color:  #F6F8FF;
+    border: 1px solid transparent;
+    padding: 0.5em;
+}
+
+header nav a:hover {
+    background: #383838;
+    border: 1px solid #383838;
+    border-radius: 10px;
+}
+/*FORM STYLES*/
+main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    min-width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+form label {
+    margin: 1em 0 0.5em 0.3em;
+    width: 100%;
+}
+
+form input {
+    font-family: 'Gulzar', serif;
+    display: block;
+    outline: none;
+    width: 100%;
+    /*height: 1em;*/
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+}
+
+form input:focus {
+    border: 1px solid #212529;
+    border-radius: 5px;
+    background: transparent;
+}
+
+form input:focus::placeholder{
+    color: transparent;
+}
+button {
+    font-family: 'Gulzar', serif;
+    font-size: 1em;
+    align-self: center;
+    margin: 1em;
+    padding: 0.4em 0.8em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: black;
+    color: #F6F8FF;
+    text-transform: uppercase;
+}
+
+button:hover {
+    font-size: 1em;
+    align-self: center;
+    margin: 1em;
+    padding: 0.4em 0.8em;
+    border: 2px inset black;
+    border-radius: 5px;
+    background: #212529;
+}
+.submit-history-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 30em;
+    border: 2px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+@media screen and (max-device-width: 420px) {
+    body{
+        font-size:2.5em;
+    }
+    .submit-history-card {
+        width: 20em;
+    }
+    form input{
+        height: 5em;
+    }
+    form label {
+        margin-top: 0.2em;
+    }
+}
